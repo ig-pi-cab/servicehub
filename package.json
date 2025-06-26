@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "rebuild-backend": "docker-compose up -d --build backend-api",
+    "rebuild-rabbitmq": "docker-compose up -d --build rabbitmq",
+    "rebuild-notifier": "docker-compose up -d --build notifications-service"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
